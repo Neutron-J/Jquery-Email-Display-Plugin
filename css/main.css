@@ -1,0 +1,73 @@
+#iframe-outer{
+	position:absolute;
+	width:100%;
+	top:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.6);
+}
+.iframe-holder{
+	position:relative;
+	background-color:#fff;
+	width:640px;
+	margin:0 auto;
+	top:30px;
+	bottom:30px;
+}
+#iframe{
+	top:0;
+	bottom:0;
+	margin:0 auto;
+	display:block;
+	border:0;
+}
+.top-row{
+	background-color:#fcfcfc;
+}
+.button-holder{
+	float:right;
+}
+button{
+	display:inline-block;
+	padding:10px;
+	border:none;
+	background-color:#fcfcfc;
+	cursor:pointer;
+}
+button:hover{
+	background-color:rgba(4,181,19,0.44);
+}
+img.icon{
+	width:30px;
+	height:auto;
+}
+a{	
+	display:block;
+	margin-bottom:10px;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
